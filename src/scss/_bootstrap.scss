@@ -1,0 +1,3 @@
+@use 'variables'as *;
+
+@use 'bootstrap/scss/bootstrap' with ($primary: red);
