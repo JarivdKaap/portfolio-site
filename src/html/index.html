@@ -2,102 +2,106 @@
 <html>
   <head>
     <title>Portfolio - Jari van der Kaap</title>
+    <link rel="icon" href="<%=require('../assets/img/jk_logo.png')%>">
   </head>
 
-  <body class="container">
-    <header>
+  <body >
+    <section class="section-main mt-5">
       <img src="<%=require('../assets/img/jk_logo.png')%>" />
-    </header>
-    <section class="mainSection mt-5">
       <h1>Jari van der Kaap</h1>
       <h3>Student Computer Science, Full-stack developer, nog wa tekst</h3>
     </section>
-    <section>
-      <hr />
-      <h3>Skills</h3>
-      <div class="row justify-content-md-center">
-        <div class="col-lg-3 col-md-6 mt-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Languages</h5>
-              <p class="card-text">
-                <ul>
-                  <li>C#</li>
-                  <li>Javascript (TypeScript)</li>
-                  <li>Java</li>
-                  <li>Kotlin</li>
-                </ul>
-              </p>
+    <section class="section-skills">
+      <div class="section-skills-bg"></div>
+      <div class="container">
+        <h3>Skills</h3>
+        <div class="row justify-content-md-center">
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Languages</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>C#</li>
+                    <li>Javascript (TypeScript)</li>
+                    <li>Java</li>
+                    <li>Kotlin</li>
+                  </ul>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mt-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Back-end</h5>
-              <p class="card-text">
-                <ul>
-                  <li>ASP .NET Core</li>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>SQL</li>
-                  <li>MongoDB</li>
-                </ul>
-              </p>
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Back-end</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>ASP .NET Core</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>SQL</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mt-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Front-end</h5>
-              <p class="card-text">
-                <ul>
-                  <li>HTML 5</li>
-                  <li>CSS3 (SASS)</li>
-                  <li>Vue.js</li>
-                </ul>
-              </p>
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Front-end</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>HTML 5</li>
+                    <li>CSS3 (SASS)</li>
+                    <li>Vue.js</li>
+                  </ul>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mt-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Deployment</h5>
-              <p class="card-text">
-                <ul>
-                  <li>Git</li>
-                  <li>Linux</li>
-                  <li>Docker</li>
-                </ul>
-              </p>
-            </div>
-         </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <hr />
-      <h2>Projects</h2>
-      <div class="row justify-content-md-center">
-        <div class="col-lg-4 mt-3">
-          <div class="card">
-            <img class="card-img-top" src="..." alt="Image of BlackOpsCR platform" />
-            <div class="card-body">
-              <h5 class="card-title">BlackOpsCustomRecords</h5>
-              <p class="card-text">
-                A platform that stores gameplay data from players from Call of Duty: Black Ops 3 Custom Zombies.
-              </p>
-              <a href="#" class="btn btn-primary">Demo</a>
-              <a href="#" class="btn btn-secondary">Source Code</a>
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Deployment</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Git</li>
+                    <li>Linux</li>
+                    <li>Docker</li>
+                  </ul>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <hr>
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="row justify-content-md-center">
+          <div class="col-lg-4 mt-3">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="Image of BlackOpsCR platform" />
+              <div class="card-body">
+                <h5 class="card-title">BlackOpsCustomRecords</h5>
+                <p class="card-text">
+                  A platform that stores gameplay data from players from Call of Duty: Black Ops 3 Custom Zombies.
+                </p>
+                <p class="card-text">
+                  Written in the MEVN stack (Mongodb, Express.js, Vue.js & Node.js)
+                </p>
+                <a href="http://bocr.jarivdkaap.com/" target="_blank" class="btn btn-primary">Demo</a>
+                <a href="https://github.com/JarivdKaap/BlackOpsCR" target="_blank" class="btn btn-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
       <h2>Contact</h2>
       <div class="mt-3">
         <a href="https://github.com/JarivdKaap" target="_blank"><i class="fab fa-github fa-lg mr-md-2 mr-2 fa-2x"></i></a>
@@ -109,7 +113,6 @@
       
     </section>
     <footer>
-      <hr>
       Jari van der Kaap © 2020
     </footer>
   </body>
