@@ -10,9 +10,30 @@
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
-            <img src="<%=require('../assets/images/jk_logo.png')%>" alt="JK Logo" width="50" height="50" />
+            <!-- TODO: Make this image an svg + green -->
+            <img
+              class="jk-logo"
+              src="<%=require('../assets/images/jk_logo.png')%>"
+              alt="JK Logo"
+              width="100px"
+              height="100px"
+            />
           </a>
-          <!-- TODO: Add Github & Linkedin logos with link -->
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item socials">
+            <a href="https://github.com/JarivdKaap" target="_blank">
+              <img src="<%=require('../assets/images/socials/github.svg')%>" alt="Github Logo" width="30" height="30"
+            /></a>
+            <a class="ml-3" href="https://www.linkedin.com/in/jarivanderkaap/" target="_blank">
+              <img
+                src="<%=require('../assets/images/socials/linkedin.svg')%>"
+                alt="LinkedIn Logo"
+                width="30"
+                height="30"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -23,24 +44,26 @@
             Hi! I'm Jari van der Kaap
           </h1>
           <h2 class="subtitle has-text-grey-lighter is-size-4-desktop">
-            Student Computer Science, Full-stack developer, nog wa tekst
+            Student Computer Science, Full-stack developer
           </h2>
-          <img src="<%=require('../assets/images/jk_logo.png')%>" alt="JK Logo" width="50" height="50" />
+          <img src="<%=require('../assets/images/jk_logo.png')%>" alt="JK Logo" width="250" height="250" />
           <!-- TODO: Add a proper image -->
         </div>
       </div>
     </section>
-    <section class="has-primary-color has-text-centered">
+    <!--<section class="has-primary-color has-text-centered">
       <div class="container has-text-light">
-        Some more personal information
+        Some more personal information-->
         <!-- TODO: Add some more personal information -->
-      </div>
-    </section>
+      <!--</div>
+    </section>-->
     <section class="skills">
-      <div class="container">
+      <div class="has-long-background has-primary-color">
         <h1 class="has-text-centered has-text-light is-size-1-desktop is-size-2-tablet is-size-3-mobile">
           Skills
         </h1>
+      </div>
+      <div class="container">
         <div class="grid-wrapper">
           <div class="grid-item item-languages">
             <div class="box">
@@ -52,6 +75,7 @@
                 <li>Javascript (TypeScript)</li>
                 <li>Java</li>
                 <li>Kotlin</li>
+                <br>
               </ul>
             </div>
           </div>
@@ -91,6 +115,7 @@
                 <li>Git</li>
                 <li>Linux</li>
                 <li>Docker</li>
+                <br>
               </ul>
             </div>
           </div>
@@ -99,54 +124,72 @@
       </div>
     </section>
     <section class="projects">
-      <h1
-        class="has-primary-color has-text-centered has-text-light is-size-1-desktop is-size-2-tablet is-size-3-mobile"
-      >
-        Projects
-      </h1>
+      <div class="has-long-background has-primary-color">
+        <h1 class="has-text-centered has-text-light is-size-1-desktop is-size-2-tablet is-size-3-mobile">
+          Projects
+        </h1>
+      </div>
+
       <div class="container">
-        <div class="mt-5 columns is-vcentered">
-          <div class="column is-6">
-            <!-- TODO: Change the image so it has the platform on the screen -->
-            <img
-              class="m-5"
-              src="<%=require('../assets/images/bocr_thumbnail_laptop.png')%>"
-              alt="Laptop with BOCR platform on it"
-            />
-          </div>
-          <div class="column is-6 has-text-centered">
-            <h1 class="title has-text-primary is-size-1-desktop is-size-2-tablet is-size-3-mobile">
-              BlackOpsCustomRecords
-            </h1>
-            <h2 class="mx-5 subtitle has-text-grey-lighter is-size-4-desktop">
-              A platform that stores gameplay data from players from Call of Duty: Black Ops 3 Custom Zombies.
-            </h2>
-            <div class="columns is-mobile is-centered">
-              <div class="column is-narrow">
-                <a href="http://bocr.jarivdkaap.com" target="_blank" class="button is-primary">Demo</a>
-              </div>
-              <div class="column is-narrow">
-                <a href="http://github.com/jarivdkaap" target="_blank" class="button is-primary is-outlined">Source-Code</a>
-                <!-- TODO: Change url to proper repository -->
-              </div>
+        <div class="box mx-3">
+          <div class="mt-5 columns is-vcentered">
+            <div class="column is-6">
+              <!-- TODO: Change the image so it has the platform on the screen -->
+              <img
+                class="m-5"
+                src="<%=require('../assets/images/bocr_thumbnail_laptop.png')%>"
+                alt="Laptop with BOCR platform on it"
+              />
             </div>
-            <div class="columns is-mobile is-centered technologies">
-              <div class="column is-narrow">
-                <img src="<%=require('../assets/images/technologies/mongodb.png')%>" alt="MongoDB Logo" />
+            <div class="column is-6 has-text-centered">
+              <h1 class="title has-text-primary is-size-1-desktop is-size-3-tablet is-size-3-mobile">
+                BlackOpsCustomRecords
+              </h1>
+              <h2 class="mx-5 subtitle has-text-grey-lighter is-size-4-desktop">
+                A platform that stores gameplay data from players from Call of Duty: Black Ops 3 Custom Zombies.
+              </h2>
+              <div class="columns is-mobile is-centered">
+                <div class="column is-narrow">
+                  <a href="http://bocr.jarivdkaap.com" target="_blank" class="button is-primary">Demo</a>
+                </div>
+                <div class="column is-narrow">
+                  <a href="http://github.com/jarivdkaap" target="_blank" class="button is-primary is-outlined"
+                    >Source-Code</a
+                  >
+                  <!-- TODO: Change url to proper repository -->
+                </div>
               </div>
-              <div class="column is-narrow">
-                <img src="<%=require('../assets/images/technologies/express.png')%>" alt="Express.js Logo" />
-              </div>
-              <div class="column is-narrow">
-                <img src="<%=require('../assets/images/technologies/vue.png')%>" alt="Vue.js Logo" />
-              </div>
-              <div class="column is-narrow">
-                <img src="<%=require('../assets/images/technologies/node.png')%>" alt="Node.js Logo" />
+              <div class="columns is-mobile is-centered technologies">
+                <div class="column is-narrow">
+                  <img
+                    src="<%=require('../assets/images/technologies/mongodb.png')%>"
+                    title="MongoDB"
+                    alt="MongoDB Logo"
+                  />
+                </div>
+                <div class="column is-narrow">
+                  <img
+                    src="<%=require('../assets/images/technologies/express.png')%>"
+                    title="Express.js"
+                    alt="Express.js Logo"
+                  />
+                </div>
+                <div class="column is-narrow">
+                  <img src="<%=require('../assets/images/technologies/vue.png')%>" title="Vue.js" alt="Vue.js Logo" />
+                </div>
+                <div class="column is-narrow">
+                  <img
+                    src="<%=require('../assets/images/technologies/node.png')%>"
+                    title="Node.js"
+                    alt="Node.js Logo"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- TODO: Add contact section + copyright -->
   </body>
 </html>

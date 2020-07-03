@@ -6,13 +6,25 @@
 
 body {
   background-color: $background;
-
-
 }
 
-.navbar-item img {
-  min-height: 100px;
-  min-width: 100px;
+.navbar {
+  .jk-logo {
+    min-height: 100px;
+    min-width: 100px;
+  }
+
+  .navbar-brand {
+    float: left;
+  }
+  .navbar-end {
+
+    float: right;
+
+    .columns {
+      height: 100%;
+    }
+  }
 }
 
 .has-primary-color {
@@ -31,11 +43,10 @@ body {
     grid-template-columns: 47% auto 47%;
     grid-template-rows: auto;
     grid-template-areas:
-      'languages line .'
       'languages line backend'
-      'frontend  line backend'
+      'languages line backend'
       'frontend  line deployment'
-      '.         line deployment';
+      'frontend  line deployment';
 
     @media screen and (max-width: 768px) {
       grid-template-columns: 100%;
@@ -80,9 +91,19 @@ body {
     border-left: 8px dotted $primary;
   }
 
-  .box {
-    background-color: $card-background-color;
+  .container {
+    padding-top: 5rem;
   }
+}
+
+.box {
+  background-color: $card-background-color;
+}
+
+.has-long-background {
+  padding-bottom: 3rem;
+  position: absolute;
+  width: 100%;
 }
 
 .projects {
@@ -90,5 +111,9 @@ body {
     img {
       max-height: 40px;
     }
+  }
+
+  .container {
+    padding-top: 5rem;
   }
 }
