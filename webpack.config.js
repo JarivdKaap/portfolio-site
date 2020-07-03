@@ -13,6 +13,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.s?css$/, loader: 'style-loader!css-loader!sass-loader' },
+      { test: /\.s?ass$/, loader: 'style-loader!css-loader!sass-loader' },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader' },
       {
         test: /\.(png|svg|jpg|gif)$/,

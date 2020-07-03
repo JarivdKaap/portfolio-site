@@ -1,3 +1,7 @@
 import './scss/style.scss';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import 'bootstrap';
+
+import { getCLS, getFID, getLCP } from 'web-vitals';
+
+getCLS(console.log);
+getFID(console.log);
+getLCP(console.log);

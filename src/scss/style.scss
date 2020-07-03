@@ -2,59 +2,93 @@
 
 @use 'mixins'as *;
 
-@use 'bootstrap';
-
-html {
-  position: relative;
-  min-height: 100%;
-}
+@use 'bulma';
 
 body {
-  ///* Margin bottom by footer height 
-  position: relative;
-  top: -40px;
-  margin-top: -50px;
-  margin-bottom: 60px;
-  text-align: center;
+  background-color: $background;
+
 
 }
 
+.navbar-item img {
+  min-height: 100px;
+  min-width: 100px;
+}
 
-.section-main {
-  background-image: url('../assets/img/main_section_bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding-bottom: 40px;
-  transform: skewY(-1.5deg);
+.has-primary-color {
+  background-color: $primary;
+  color: $primary;
+}
 
-  h1 {
-    font-size: 70px;
+.content ul {
+  list-style-type: none;
+  margin: auto;
+}
+
+.skills {
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 47% auto 47%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'languages line .'
+      'languages line backend'
+      'frontend  line backend'
+      'frontend  line deployment'
+      '.         line deployment';
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 100%;
+      grid-template-areas:
+        'languages'
+        'backend'
+        'frontend'
+        'deployment';
+
+      .grid-item .box {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+    }
   }
 
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
-    max-height: 200px;
+  .grid-item .box {
+    margin: 5px;
   }
 
-  h1,
-  h3,
-  img {
-    transform: skewY(1.5deg);
+  .item-languages {
+    grid-area: languages;
+  }
+
+  .item-backend {
+    grid-area: backend;
+  }
+
+  .item-frontend {
+    grid-area: frontend;
+  }
+
+  .item-deployment {
+    grid-area: deployment;
+  }
+
+  .item-line {
+    margin-top: 10px;
+    grid-area: line;
+    position: relative;
+    left: calc(50% - 4px);
+    border-left: 8px dotted $primary;
+  }
+
+  .box {
+    background-color: $card-background-color;
   }
 }
 
-.section-skills {
-  padding-top: 20px;
-  background-color: #999;
-  transform: skewY(-1.5deg);
-  padding-bottom: 40px;
-
-  & > div {
-    transform: skewY(1.5deg);
+.projects {
+  .technologies {
+    img {
+      max-height: 40px;
+    }
   }
 }

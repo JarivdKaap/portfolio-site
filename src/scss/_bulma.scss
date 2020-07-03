@@ -1,0 +1,3 @@
+@use 'variables'as *;
+
+@use 'bulma/bulma'with ($primary: $primary, $navbar-background-color: transparent, $navbar-height: 8rem, $navbar-item-img-max-height: 6rem, $card-background-color: $card-background-color);
