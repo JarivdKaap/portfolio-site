@@ -1,9 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio - Jari van der Kaap</title>
     <link rel="icon" href="<%=require('../assets/images/jk_logo.png')%>" />
+    <meta name="author" content="Jari van der Kaap" />
+    <meta name="description" content="Portfolio site of Jari van der Kaap" />
+    <meta name="keywords" content="Jari van der Kaap,jarivdkaap,portfolio" />
   </head>
   <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -22,10 +26,10 @@
         </div>
         <div class="navbar-end">
           <div class="navbar-item socials">
-            <a href="https://github.com/JarivdKaap" target="_blank">
+            <a href="https://github.com/JarivdKaap" rel="noopener" target="_blank">
               <img src="<%=require('../assets/images/socials/github.svg')%>" alt="Github Logo" width="30" height="30"
             /></a>
-            <a class="ml-3" href="https://www.linkedin.com/in/jarivanderkaap/" target="_blank">
+            <a class="ml-3" href="https://www.linkedin.com/in/jarivanderkaap/" rel="noopener" target="_blank">
               <img
                 src="<%=require('../assets/images/socials/linkedin.svg')%>"
                 alt="LinkedIn Logo"
@@ -54,8 +58,8 @@
     <!--<section class="has-primary-color has-text-centered">
       <div class="container has-text-light">
         Some more personal information-->
-        <!-- TODO: Add some more personal information -->
-      <!--</div>
+    <!-- TODO: Add some more personal information -->
+    <!--</div>
     </section>-->
     <section class="skills">
       <div class="has-long-background has-primary-color">
@@ -75,7 +79,7 @@
                 <li>Javascript (TypeScript)</li>
                 <li>Java</li>
                 <li>Kotlin</li>
-                <br>
+                <li><br /></li>
               </ul>
             </div>
           </div>
@@ -115,7 +119,7 @@
                 <li>Git</li>
                 <li>Linux</li>
                 <li>Docker</li>
-                <br>
+                <li><br /></li>
               </ul>
             </div>
           </div>
@@ -128,6 +132,7 @@
         <h1 class="has-text-centered has-text-light is-size-1-desktop is-size-2-tablet is-size-3-mobile">
           Projects
         </h1>
+        <p class="has-text-centered has-text-light">Others to be added soon.</p>
       </div>
 
       <div class="container">
@@ -150,10 +155,14 @@
               </h2>
               <div class="columns is-mobile is-centered">
                 <div class="column is-narrow">
-                  <a href="http://bocr.jarivdkaap.com" target="_blank" class="button is-primary">Demo</a>
+                  <a href="http://bocr.jarivdkaap.com" rel="noopener" target="_blank" class="button is-primary">Demo</a>
                 </div>
                 <div class="column is-narrow">
-                  <a href="http://github.com/jarivdkaap" target="_blank" class="button is-primary is-outlined"
+                  <a
+                    href="http://github.com/jarivdkaap"
+                    rel="noopener"
+                    target="_blank"
+                    class="button is-primary is-outlined"
                     >Source-Code</a
                   >
                   <!-- TODO: Change url to proper repository -->
@@ -190,6 +199,31 @@
         </div>
       </div>
     </section>
-    <!-- TODO: Add contact section + copyright -->
+
+    <section class="contact">
+      <hr class="has-primary-color" />
+      <div class="container">
+        <div class="mt-5 pb-5 columns is-centered">
+          <div class="column is-4 has-text-centered">
+            <h1 class="title has-text-primary-light is-size-2-desktop">Want to work together?</h1>
+            <h2 class="subtitle has-text-primary-light">
+              Hit me up on LinkedIn and we'll set up a meeting to see how we can help each other.
+            </h2>
+            <a href="https://github.com/JarivdKaap" rel="noopener" target="_blank">
+              <img src="<%=require('../assets/images/socials/github.svg')%>" alt="Github Logo" width="50" height="50"
+            /></a>
+            <a class="ml-3" href="https://www.linkedin.com/in/jarivanderkaap/" rel="noopener" target="_blank">
+              <img
+                src="<%=require('../assets/images/socials/linkedin.svg')%>"
+                alt="LinkedIn Logo"
+                width="50"
+                height="50"
+              />
+            </a>
+            <p class="has-text-primary-light mt-5">Jari van der Kaap © 2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

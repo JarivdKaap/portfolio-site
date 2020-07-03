@@ -2,9 +2,10 @@
 
 @use 'mixins'as *;
 
-@use 'bulma';
+@use 'bulma.sass';
 
-body {
+body,
+html {
   background-color: $background;
 }
 
@@ -18,7 +19,6 @@ body {
     float: left;
   }
   .navbar-end {
-
     float: right;
 
     .columns {
@@ -44,8 +44,6 @@ body {
     grid-template-rows: auto;
     grid-template-areas:
       'languages line backend'
-      'languages line backend'
-      'frontend  line deployment'
       'frontend  line deployment';
 
     @media screen and (max-width: 768px) {
@@ -114,6 +112,6 @@ body {
   }
 
   .container {
-    padding-top: 5rem;
+    padding-top: 6.5rem;
   }
 }
