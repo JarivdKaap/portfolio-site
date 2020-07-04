@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio - Jari van der Kaap</title>
-    <link rel="icon" href="<%=require('../assets/images/jk_logo.png')%>" />
+    <link rel="icon" href="<%=require('../assets/images/jk_logo.svg')%>" />
     <meta name="author" content="Jari van der Kaap" />
     <meta name="description" content="Portfolio site of Jari van der Kaap" />
     <meta name="keywords" content="Jari van der Kaap,jarivdkaap,portfolio" />
+    <meta name="theme-color" content="#00BC61" />
   </head>
   <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
-            <!-- TODO: Make this image an svg + green -->
             <img
               class="jk-logo"
-              src="<%=require('../assets/images/jk_logo.png')%>"
+              src="<%=require('../assets/images/jk_logo.svg')%>"
               alt="JK Logo"
               width="100px"
               height="100px"
@@ -50,7 +50,7 @@
           <h2 class="subtitle has-text-grey-lighter is-size-4-desktop">
             Student Computer Science, Full-stack developer
           </h2>
-          <img src="<%=require('../assets/images/jk_logo.png')%>" alt="JK Logo" width="250" height="250" />
+          <img src="<%=require('../assets/images/jk_logo.svg')%>" alt="JK Logo" width="250" height="250" />
           <!-- TODO: Add a proper image -->
         </div>
       </div>
@@ -71,10 +71,12 @@
         <div class="grid-wrapper">
           <div class="grid-item item-languages">
             <div class="box">
-              <p class="has-text-primary mb-2 has-text-weight-bold is-size-4-desktop has-text-centered">
+              <p
+                class="has-text-primary mb-2 has-text-weight-bold is-size-4-desktop is-size-5-tablet is-size-5-mobile has-text-centered"
+              >
                 Languages
               </p>
-              <ul class="has-text-light has-text-centered">
+              <ul class="has-text-light has-text-centered is-size-5-desktop is-size-6">
                 <li>C#</li>
                 <li>Javascript (TypeScript)</li>
                 <li>Java</li>
@@ -85,10 +87,12 @@
           </div>
           <div class="grid-item item-backend">
             <div class="box">
-              <p class="has-text-primary mb-2 has-text-weight-bold is-size-4-desktop has-text-centered">
+              <p
+                class="has-text-primary mb-2 has-text-weight-bold is-size-4-desktop is-size-5-tablet is-size-5-mobile has-text-centered"
+              >
                 Back-end
               </p>
-              <ul class="has-text-light has-text-centered">
+              <ul class="has-text-light has-text-centered is-size-5-desktop is-size-6">
                 <li>ASP .NET Core</li>
                 <li>Node.js</li>
                 <li>Express.js</li>
@@ -99,10 +103,12 @@
           </div>
           <div class="grid-item item-frontend">
             <div class="box">
-              <p class="has-text-primary mb-2 has-text-weight-bold is-size-4-desktop has-text-centered">
+              <p
+                class="has-text-primary mb-2 has-text-weight-bold is-size-4-desktop is-size-5-tablet is-size-5-mobile has-text-centered"
+              >
                 Front-end
               </p>
-              <ul class="has-text-light has-text-centered">
+              <ul class="has-text-light has-text-centered is-size-5-desktop is-size-6">
                 <li>HTML 5</li>
                 <li>CSS3 (Sass)</li>
                 <li>Vue.js</li>
@@ -112,10 +118,12 @@
           </div>
           <div class="grid-item item-deployment">
             <div class="box">
-              <p class="has-text-primary mb-2 has-text-weight-bold is-size-4-desktop has-text-centered">
+              <p
+                class="has-text-primary mb-2 has-text-weight-bold is-size-4-desktop is-size-5-tablet is-size-5-mobile has-text-centered"
+              >
                 Deployment
               </p>
-              <ul class="has-text-light has-text-centered">
+              <ul class="has-text-light has-text-centered is-size-5-desktop is-size-6">
                 <li>Git</li>
                 <li>Linux</li>
                 <li>Docker</li>
@@ -124,6 +132,8 @@
             </div>
           </div>
           <div class="grid-item item-line"></div>
+          <div class="grid-item item-margin1"></div>
+          <div class="grid-item item-margin2"></div>
         </div>
       </div>
     </section>
@@ -155,11 +165,11 @@
               </h2>
               <div class="columns is-mobile is-centered">
                 <div class="column is-narrow">
-                  <a href="http://bocr.jarivdkaap.com" rel="noopener" target="_blank" class="button is-primary">Demo</a>
+                  <a href="https://bocr.jarivdkaap.com" rel="noopener" target="_blank" class="button is-primary">Demo</a>
                 </div>
                 <div class="column is-narrow">
                   <a
-                    href="http://github.com/jarivdkaap"
+                    href="https://github.com/jarivdkaap"
                     rel="noopener"
                     target="_blank"
                     class="button is-primary is-outlined"

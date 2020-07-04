@@ -28,7 +28,7 @@ html {
 }
 
 .has-primary-color {
-  background-color: $primary;
+  background-color: $primary-dark;
   color: $primary;
 }
 
@@ -44,7 +44,8 @@ html {
     grid-template-rows: auto;
     grid-template-areas:
       'languages line backend'
-      'frontend  line deployment';
+      'frontend  line deployment'
+      'margin1    line margin2';
 
     @media screen and (max-width: 768px) {
       grid-template-columns: 100%;
@@ -86,7 +87,15 @@ html {
     grid-area: line;
     position: relative;
     left: calc(50% - 4px);
-    border-left: 8px dotted $primary;
+    border-left: 8px dotted $primary-dark;
+  }
+
+  .item-margin1 {
+    height: 20px;
+    grid-area: margin1;
+  }
+  .item-margin2 {
+    grid-area: margin2;
   }
 
   .container {

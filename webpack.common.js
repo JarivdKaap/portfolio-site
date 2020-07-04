@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -8,8 +9,6 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  devtool: 'source-map',
-  mode: 'development',
   module: {
     rules: [
       { test: /\.s?css$/, loader: 'style-loader!css-loader!sass-loader' },
@@ -27,15 +26,15 @@ module.exports = {
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/html/index.html',
     }),
+    new ImageminPlugin({
+      pngquant: {
+        quality: '95-100',
+      },
+    }),
   ],
-  devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
-    watchContentBase: true,
-    compress: true,
-    port: 9000,
-  },
 };
