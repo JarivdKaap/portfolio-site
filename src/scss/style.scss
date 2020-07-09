@@ -18,6 +18,7 @@ html {
   .navbar-brand {
     float: left;
   }
+
   .navbar-end {
     float: right;
 
@@ -94,6 +95,7 @@ html {
     height: 20px;
     grid-area: margin1;
   }
+
   .item-margin2 {
     grid-area: margin2;
   }
@@ -122,5 +124,13 @@ html {
 
   .container {
     padding-top: 6.5rem;
+  }
+}
+
+.aboutme {
+  margin-top: rem;
+
+  .container {
+    padding-top: 5rem;
   }
 }
